@@ -1,0 +1,48 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+     <title>Boutique Maybe</title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="Colo Shop Template">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     @Styles.Render("~/bundles/boostrap4/css")
+     @Styles.Render("~/bundles/font_awesome_min/css")
+     @Styles.Render("~/bundles/owl.carousel/css")
+     @Styles.Render("~/bundles/owl.theme.default/css")
+     @Styles.Render("~/bundles/animate/css")
+     @Styles.Render("~/bundles/main_styles/css")
+     @Styles.Render("~/bundles/responsive/css")
+
+     <!-- Add local styles, mostly for plugins css file -->
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("Styles", required: false)}
+
+     <!-- Primary HOME style -->
+     @Styles.Render("~/bundles/main/css")
+</head>
+
+<body class="blank">
+     <div class="wrapper">
+          <!-- Main view -->
+          <section class="content">
+               @RenderBody()
+          </section>
+
+          <!--Section for main scripts render -->
+          @Scripts.Render("~/bundles/jquery/js")
+          @Scripts.Render("~/bundles/popper/js")
+          @Scripts.Render("~/bundles/bootstrap.min/js")
+          @Scripts.Render("~/bundles/isotope.pkgd.min/js")
+          @Scripts.Render("~/bundles/owl.carousel/js")
+          @Scripts.Render("~/bundles/easing/js")
+          @Scripts.Render("~/bundles/easing/js")
+          <!-- Handler for local scripts -->
+          @RenderSection("scripts", required: false)
+     </div>
+
+</body>
+</html>

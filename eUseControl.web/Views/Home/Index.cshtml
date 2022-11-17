@@ -1,0 +1,854 @@
+﻿@{ 
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "Home";
+}
+
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+     <title>Boutique Maybe</title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="Colo Shop Template">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+
+<body>
+
+     <div class="super_container">
+
+          <!-- Header -->
+
+          <header class="header trans_300">
+
+               <!-- Top Navigation -->
+
+               <div class="top_nav">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-md-6">
+                                   <div class="top_nav_left">Livrare gratuită la toate comenzile peste 1000lei</div>
+                              </div>
+                              <div class="col-md-6 text-right">
+                                   <div class="top_nav_right">
+                                        <ul class="top_nav_menu">
+
+                                             <!-- Currency / Language / My Account -->
+
+                                             <li class="currency">
+                                                  <a href="#">
+                                                       lei
+                                                       <i class="fa fa-angle-down"></i>
+                                                  </a>
+                                                  <ul class="currency_selection">
+
+                                                       <li><a href="#">ron</a></li>
+                                                       <li><a href="#">eur</a></li>
+                                                       <li><a href="#">usd</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li class="language">
+                                                  <a href="#">
+                                                       Română
+                                                       <i class="fa fa-angle-down"></i>
+                                                  </a>
+                                                  <ul class="language_selection">
+                                                       <li><a href="#">French</a></li>
+                                                       <li><a href="#">English</a></li>
+                                                       <li><a href="#">Spanish</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li class="account">
+                                                  <a href="#">
+                                                       Contul meu
+                                                       <i class="fa fa-angle-down"></i>
+                                                  </a>
+                                                  <ul class="account_selection">
+                                                       <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Conectare</a></li>
+                                                       <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Înregistează-te</a></li>
+                                                  </ul>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <!-- Main Navigation -->
+
+               <div class="main_nav_container">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-lg-12 text-right">
+                                   <div class="logo_container">
+                                        <a href="#">Boutique<span>Maybe</span></a>
+                                   </div>
+                                   <nav class="navbar">
+                                        <ul class="navbar_menu">
+                                             <li><a href="#">Acasă</a></li>
+                                             <li><a href="#">Magazin</a></li>
+                                             <li><a href="#">promotii</a></li>
+                                             <li><a href="#">blog</a></li>
+                                             <li><a href="contact.html">Contacte</a></li>
+                                        </ul>
+                                        <ul class="navbar_user">
+                                             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                             <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                             <li class="checkout">
+                                                  <a href="#">
+                                                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                       <span id="checkout_items" class="checkout_items">2</span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                        <div class="hamburger_container">
+                                             <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </div>
+                                   </nav>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+          </header>
+
+          <div class="fs_menu_overlay"></div>
+          <div class="hamburger_menu">
+               <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+               <div class="hamburger_menu_content text-right">
+                    <ul class="menu_top_nav">
+                         <li class="menu_item has-children">
+                              <a href="#">
+                                   lei
+                                   <i class="fa fa-angle-down"></i>
+                              </a>
+                              <ul class="menu_selection">
+                                   <li><a href="#">ron</a></li>
+                                   <li><a href="#">eur</a></li>
+                                   <li><a href="#">usd</a></li>
+                              </ul>
+                         </li>
+                         <li class="menu_item has-children">
+                              <a href="#">
+                                   Română
+                                   <i class="fa fa-angle-down"></i>
+                              </a>
+                              <ul class="menu_selection">
+                                   <li><a href="#">French</a></li>
+                                   <li><a href="#">English</a></li>
+                                   <li><a href="#">Spanish</a></li>
+                              </ul>
+                         </li>
+                         <li class="menu_item has-children">
+                              <a href="#">
+                                   Contul meu
+                                   <i class="fa fa-angle-down"></i>
+                              </a>
+                              <ul class="menu_selection">
+                                   <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Conectare</a></li>
+                                   <li>
+                                        <a href="#">
+                                             <i class="fa fa-user-plus" aria-hidden="true"></i>Înregistrează-te
+                                        </a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="menu_item"><a href="#">Acasă</a></li>
+                         <li class="menu_item"><a href="#">Magazin</a></li>
+                         <li class="menu_item"><a href="#">Promotii</a></li>
+                         <li class="menu_item"><a href="#">blog</a></li>
+                         <li class="menu_item"><a href="#">contacte</a></li>
+                    </ul>
+               </div>
+          </div>
+
+          <!-- Slider -->
+
+          <div class="main_slider" style="background-image:url(images/maybe.jpg)">
+               <div class="container fill_height">
+                    <div class="row align-items-center fill_height">
+                         <div class="col">
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Banner -->
+
+          <div class="banner">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-4">
+                              <div class="banner_item align-items-center" style="background-image:url(images/bluzaa.jpg)">
+                                   <div class="banner_category">
+                                        <a href="categories.html">Bluze</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <div class="banner_item align-items-center" style="background-image:url(images/fustaa.jpg)">
+                                   <div class="banner_category">
+                                        <a href="categories.html">Fuste</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <div class="banner_item align-items-center" style="background-image:url(images/costume.jpg)">
+                                   <div class="banner_category">
+                                        <a href="categories.html">Costume</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- New Arrivals -->
+
+          <div class="new_arrivals">
+               <div class="container">
+                    <div class="row">
+                         <div class="col text-center">
+                              <div class="section_title new_arrivals_title">
+                                   <h2>Produse noi</h2>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row align-items-center">
+                         <div class="col text-center">
+                              <div class="new_arrivals_sorting">
+                                   <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">Toate</li>
+                                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">Bluze</li>
+                                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">Fuste</li>
+                                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">Costume</li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col">
+                              <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+
+                                   <!-- Product 1 -->
+
+                                   <div class="product-item men">
+                                        <div class="product discount product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/costum.jpg" alt="">
+                                             </div>
+                                             <div class="favorite favorite_left"></div>
+                                             <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                  <div class="product_price">1000lei<span>1500lei</span></div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 2 -->
+
+                                   <div class="product-item women">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/Bluzaa.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>Nou</span></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Bluză</a></h6>
+                                                  <div class="product_price">600lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 3 -->
+
+                                   <div class="product-item women">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/bluza8.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Bluză</a></h6>
+                                                  <div class="product_price">600lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 4 -->
+
+                                   <div class="product-item accessories">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/fustă.jpg" alt="">
+                                             </div>
+                                             <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                             <div class="favorite favorite_left"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Fustă</a></h6>
+                                                  <div class="product_price">700lei<span>900lei</span></div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 5 -->
+
+                                   <div class="product-item men">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/costum2.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                  <div class="product_price">1200lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 6 -->
+
+                                   <div class="product-item accessories">
+                                        <div class="product discount product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/fusta2.jpg" alt="">
+                                             </div>
+                                             <div class="favorite favorite_left"></div>
+                                             <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-REDUCERE</span></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="#single.html">Fustă</a></h6>
+                                                  <div class="product_price">750lei<span>900lei</span></div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+                                   </div>
+
+                                   <!-- Product 7 -->
+
+                                   <div class="product-item women">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/bluza3.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Bluza</a></h6>
+                                                  <div class="product_price">500lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 8 -->
+
+                                   <div class="product-item accessories">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/fusta4.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Fustă</a></h6>
+                                                  <div class="product_price">600lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 9 -->
+
+                                   <div class="product-item men">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/costum1.jpg" alt="">
+                                             </div>
+                                             <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                             <div class="favorite favorite_left"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                  <div class="product_price">1000lei<span>1200lei</span></div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+
+                                   <!-- Product 10 -->
+
+                                   <div class="product-item men">
+                                        <div class="product product_filter">
+                                             <div class="product_image">
+                                                  <img src="images/costum3.jpg" alt="">
+                                             </div>
+                                             <div class="favorite"></div>
+                                             <div class="product_info">
+                                                  <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                  <div class="product_price">850lei</div>
+                                             </div>
+                                        </div>
+                                        <div class="red_button add_to_cart_button"><a href="#">Adaugă în coș</a></div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Deal of the week -->
+
+          <div class="deal_ofthe_week">
+               <div class="container">
+                    <div class="row align-items-center">
+                         <div class="col-lg-6">
+                              <div class="deal_ofthe_week_img">
+                                   <img src="images/week.jpg" alt="">
+                              </div>
+                         </div>
+                         <div class="col-lg-6 text-right deal_ofthe_week_col">
+                              <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                                   <div class="section_title">
+                                        <h2>Oferta săptămânii</h2>
+                                   </div>
+                                   <ul class="timer">
+                                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                             <div id="day" class="timer_num">03</div>
+                                             <div class="timer_unit">Zile</div>
+                                        </li>
+                                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                             <div id="hour" class="timer_num">15</div>
+                                             <div class="timer_unit">Ore</div>
+                                        </li>
+                                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                             <div id="minute" class="timer_num">45</div>
+                                             <div class="timer_unit">Minute</div>
+                                        </li>
+                                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                             <div id="second" class="timer_num">23</div>
+                                             <div class="timer_unit">Secunde</div>
+                                        </li>
+                                   </ul>
+                                   <div class="red_button deal_ofthe_week_button"><a href="#">Cumpără acum</a></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Best Sellers -->
+
+          <div class="best_sellers">
+               <div class="container">
+                    <div class="row">
+                         <div class="col text-center">
+                              <div class="section_title new_arrivals_title">
+                                   <h2>Cele mai vândute</h2>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col">
+                              <div class="product_slider_container">
+                                   <div class="owl-carousel owl-theme product_slider">
+
+                                        <!-- Slide 1 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item">
+                                                  <div class="product discount">
+                                                       <div class="product_image">
+                                                            <img src="images/costum4.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite favorite_left"></div>
+                                                       <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                            <div class="product_price">1100lei<span>1500lei</span></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 2 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item women">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/bluza4.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>NOU</span></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Bluză</a></h6>
+                                                            <div class="product_price">500lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 3 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item women">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/bluza5.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Bluza</a></h6>
+                                                            <div class="product_price">550lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 4 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item accessories">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/bluza6.jpg" alt="">
+                                                       </div>
+                                                       <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                                       <div class="favorite favorite_left"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Bluza</a></h6>
+                                                            <div class="product_price">480lei<span>550lei</span></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 5 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item women men">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/bluza7.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Bluză</a></h6>
+                                                            <div class="product_price">500lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 6 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item accessories">
+                                                  <div class="product discount">
+                                                       <div class="product_image">
+                                                            <img src="images/bluza8.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite favorite_left"></div>
+                                                       <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Bluză</a></h6>
+                                                            <div class="product_price">480lei<span>550lei</span></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 7 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item women">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/costum5.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                            <div class="product_price">1400lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 8 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item accessories">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/costum6.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                            <div class="product_price">1000lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 9 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item men">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/costum7.jpg" alt="">
+                                                       </div>
+                                                       <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>REDUCERE</span></div>
+                                                       <div class="favorite favorite_left"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                            <div class="product_price">800lei<span>1000lei</span></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Slide 10 -->
+
+                                        <div class="owl-item product_slider_item">
+                                             <div class="product-item men">
+                                                  <div class="product">
+                                                       <div class="product_image">
+                                                            <img src="images/costum8.jpg" alt="">
+                                                       </div>
+                                                       <div class="favorite"></div>
+                                                       <div class="product_info">
+                                                            <h6 class="product_name"><a href="single.html">Costum</a></h6>
+                                                            <div class="product_price">1100lei</div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Slider Navigation -->
+
+                                   <div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                   </div>
+                                   <div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Benefit -->
+
+          <div class="benefit">
+               <div class="container">
+                    <div class="row benefit_row">
+                         <div class="col-lg-3 benefit_col">
+                              <div class="benefit_item d-flex flex-row align-items-center">
+                                   <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                                   <div class="benefit_content">
+                                        <h6>LIVRARE GRATUITĂ</h6>
+                                        <p>la comenzi peste 1000lei</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 benefit_col">
+                              <div class="benefit_item d-flex flex-row align-items-center">
+                                   <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                                   <div class="benefit_content">
+                                        <h6>PLATA DE LIVRARE</h6>
+                                        <p>Cu cardul bancar</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 benefit_col">
+                              <div class="benefit_item d-flex flex-row align-items-center">
+                                   <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                                   <div class="benefit_content">
+                                        <h6>45 ZILE RETURNARE</h6>
+                                        <p>Dacă nu iți place produsul</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 benefit_col">
+                              <div class="benefit_item d-flex flex-row align-items-center">
+                                   <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                   <div class="benefit_content">
+                                        <h6>DESCHIS ÎN FIECARE ZI</h6>
+                                        <p>08:00-20:00</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Blogs -->
+
+          <div class="blogs">
+               <div class="container">
+                    <div class="row">
+                         <div class="col text-center">
+                              <div class="section_title">
+                                   <h2>Cele mai recente bloguri</h2>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row blogs_container">
+                         <div class="col-lg-4 blog_item_col">
+                              <div class="blog_item">
+                                   <div class="blog_background" style="background-image:url(images/costum.jpg)"></div>
+                                   <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
+                                        <h4 class="blog_title">Iată care sunt trendurile în acest sezon</h4>
+                                        <span class="blog_meta"> January 01, 2022</span>
+                                        <a class="blog_more" href="#">Citește mai mult</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 blog_item_col">
+                              <div class="blog_item">
+                                   <div class="blog_background" style="background-image:url(images/costum2.jpg)"></div>
+                                   <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
+                                        <h4 class="blog_title">Iată care sunt trendurile în acest sezon</h4>
+                                        <span class="blog_meta">March 01, 2022</span>
+                                        <a class="blog_more" href="#">Citește mai mult</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-4 blog_item_col">
+                              <div class="blog_item">
+                                   <div class="blog_background" style="background-image:url(images/costum3.jpg)"></div>
+                                   <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
+                                        <h4 class="blog_title">Iată care sunt trendurile în acest sezon</h4>
+                                        <span class="blog_meta">June 01, 2022</span>
+                                        <a class="blog_more" href="#">Citește mai mult</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Newsletter -->
+
+          <div class="newsletter">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-6">
+                              <div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                                   <h4>Newsletter</h4>
+                                   <p>Abonați-vă la newsletter-ul nostru și obțineți 20% reducere la prima achiziție</p>
+                              </div>
+                         </div>
+                         <div class="col-lg-6">
+                              <form action="post">
+                                   <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+                                        <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+                                        <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Abonează-te</button>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          @{
+               ViewBag.Title = "Index";
+          }
+
+          <br />
+          <br />
+
+          @if (ViewBag.Error != null)
+          {
+               <h2>@ViewBag.Error</h2>
+          }
+
+          <div class="col-lg-12">
+               <form method="post" action="Index">
+
+                    <span class="form-control-static"> Reciever Email: </span>
+                    <input class="form-control" type="text" name="receiverEmail" />
+                    <span class="form-control-static"> Subject</span>
+                    <input class="form-control" type="text" name="subject" />
+                    <span class="form-control-static">Message</span>
+                    <input class="form-control" type="text" name="message" />
+                  
+                    <button class="btn tn-primary" type="submit">Send Email </button>
+
+               </form>
+          </div>
+
+          <!-- Footer -->
+
+          <footer class="footer">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-6">
+                              <div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+                                   <ul class="footer_nav">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Întrebări frecvente</a></li>
+                                        <li><a href="contact.html">Contactează-ne</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-lg-6">
+                              <div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+                                   <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <div class="footer_nav_container">
+                                   <div class="cr">
+                                        ©2022 Făcut cu <i class="fa fa-heart-o" aria-hidden="true"></i> de către <a href="#">Cucuietu Ion</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+          <div class="admin_page">
+               <h2>Admin Page</h2>
+               <a href="@Url.Action("Index", "Admin")">Admin Page</a>
+          </div>
+
+     </div>
+
+     <script src="js/jquery-3.2.1.min.js"></script>
+     <script src="styles/bootstrap4/popper.js"></script>
+     <script src="styles/bootstrap4/bootstrap.min.js"></script>
+     <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+     <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+     <script src="plugins/easing/easing.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,12 @@
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.dll
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.pdb
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.AssemblyReference.cache
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.dll
+C:\Users\ioncu\source\repos\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.pdb
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.dll
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\bin\Debug\eUseControl.Helpers.pdb
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.AssemblyReference.cache
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.dll
+C:\Users\ioncu\source\repos\Laborator3IdWeb\eUseControl.web\eUseControl.Helpers\obj\Debug\eUseControl.Helpers.pdb
